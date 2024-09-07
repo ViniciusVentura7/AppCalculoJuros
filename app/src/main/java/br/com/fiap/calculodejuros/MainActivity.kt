@@ -37,6 +37,7 @@ import br.com.fiap.calculodejuros.calculos.calcularMontante
 import br.com.fiap.calculodejuros.components.CaixaDeEntrada
 import br.com.fiap.calculodejuros.components.CardResultado
 import br.com.fiap.calculodejuros.juros.JurosScreen
+import br.com.fiap.calculodejuros.juros.JurosScreenViewModel
 import br.com.fiap.calculodejuros.ui.theme.CalculoDeJurosTheme
 
 class MainActivity : ComponentActivity() {
@@ -49,7 +50,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    JurosScreen()
+                    JurosScreen(JurosScreenViewModel())
                 }
             }
         }
